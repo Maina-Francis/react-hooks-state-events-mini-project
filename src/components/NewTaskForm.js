@@ -3,6 +3,7 @@ import { useState } from "react";
 
 function NewTaskForm(props) {
   const { onTaskFormSubmit, categories } = props;
+
   const [taskFields, setTaskFields] = useState({ category: "Code", text: "" });
 
   const handleTaskFields = (event) => {
